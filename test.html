@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <link href="./test.css" rel="stylesheet" type="text/css" media="all">
+    <script src="./test.js" defer></script>
+  </head>
+  <body class="grid win95-background">
+    <div class="win95-taskbar">
+    <br>
+    </div>
+    <div class="one win95-dialog-background">
+      <div class="win95-title-bar">
+        <div class="win95-title__container-l">
+          <img src="https://picsum.photos/16?random=1" class="win95-title-bar__icon">
+          <p>Welcome to my Website!</p>
+        </div>
+        <div class="win95-title__container-r">
+          <div class="win95-dialog-background win95-title-bar__button">__</div>
+          <div class="win95-dialog-background win95-title-bar__button">[]</div>
+          <div class="win95-dialog-background win95-title-bar__button">X</div>
+        </div>
+      </div>
+    <p>This is a paragraph! Here's how you make a link: <a href="https://neocities.org">Neocities</a>.</p>
+    <button onClick="openWindow('two')">open</button>
+    <button onClick="closeWindow('two')">close</button>
+    <p>Here's how you can make <strong>bold</strong> and <em>italic</em> text.</p>
+  </div>
+  <div class="two win95-dialog-background" id="two">
+    <div  class="win95-title-bar">
+      <div class="win95-title__container-l">
+        <img src="https://picsum.photos/16?random=5" class="win95-title-bar__icon">
+        <p>Here's how you can add an image</p>
+      </div>
+        <div class="win95-title__container-r">
+          <div class="win95-dialog-background win95-title-bar__button">__</div>
+          <div class="win95-dialog-background win95-title-bar__button">[]</div>
+          <div class="win95-dialog-background win95-title-bar__button">X</div>
+        </div>
+    </div>
+    <img src="./images/88by31button.gif">
+  </div>
+  <div class="three">
+    <p>Here's how to make a list:</p>
+
+    <ul>
+      <li>First thing</li>
+      <li>Second thing</li>
+      <li>Third thing</li>
+    </ul>
+  </div>
+  <div class="four">
+    <p>To learn more HTML/CSS, check out these <a href="https://neocities.org/tutorials">tutorials</a>!</p>
+  </div>
+  <div class="five">
+    <p>a fucking banner</p>
+  </div>
+  <div class="win95-dialog-background dragable-window">
+      <div class="win95-title-bar" id="dragable-window-header">
+        <div class="win95-title__container-l">
+          <img src="https://picsum.photos/16?random=1" class="win95-title-bar__icon">
+          <p>Welcome to my Website!</p>
+        </div>
+        <div class="win95-title__container-r">
+          <div class="win95-dialog-background win95-title-bar__button">__</div>
+          <div class="win95-dialog-background win95-title-bar__button">[]</div>
+          <div class="win95-dialog-background win95-title-bar__button" onClick="closeWindow('dragable-window')">X</div>
+        </div>
+      </div>
+      <div class="resizeable">
+        <iframe src="https://matytoonistarchive.neocities.org"></iframe>
+      </div>
+  </div>
+  </body>
+</html>
