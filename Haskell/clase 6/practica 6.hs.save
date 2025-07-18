@@ -1,0 +1,29 @@
+suma :: Int -> Int -> Int
+suma x y = x + y
+
+succ = suma 1
+
+twice :: (a -> a) -> (a -> a)
+twice f = \x -> f (f x)
+
+map' :: (a->b)->([a]->[b])
+map' f [] = []
+map' f (x:xs) = f x : map f xs
+
+sum :: [Int] -> Int
+sum [] = 0
+sum (x:xs) = x + sum xs
+
+foldr :: (a -> b -> b) -> b -> [a] -> b
+foldr f z [] = z
+foldr f z (x:xs) = f x (foldr f z xs)
+
+partition :: (a -> bool) -> [a] -> ([a],[a])
+partition p [] = ([],[])
+partition p (x:xs) = let (bs,ms) = partition p xs
+			in if p x
+			then (x:bs,ms)
+			else (bs,x:ms)
+--ayudaaaaa
+
+--scanr:: 
